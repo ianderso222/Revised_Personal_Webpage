@@ -4,6 +4,13 @@
 body {
     margin: 0;
 }
+ul,
+li {
+    list-style-type: none;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
 .wrapper {
     background: linear-gradient(45deg, #FFA500, #FF5A00);
     min-height: 100vh;
@@ -35,14 +42,14 @@ ul.home_text {
     width: 20%;
 }
 .case_wrapper {
-    margin: 6em 40% 0 4%;
+    margin: 0 40% 0 4%;
     font-family: 'Lato', sans-serif;
     font-size: 1em;
     line-height: 1.8;
 }
 .case {}
 .work_wrapper {
-    margin: 7% 4% 0 2%;
+    margin: 7% 4% 0 4%;
 }
 .nav_list {
     display: inline-block;
@@ -100,6 +107,16 @@ ul.work_images li {
     display: inline-block;
     /*padding: 5% 5% 5% 5%; */
 }
+.case_image_wrapper {
+    margin: 6em 4% 0 4%;
+}
+ul.case_images li {
+    list-style-type: none;
+}
+.case_thumb_wide {
+    width: ;
+    height: 600px
+}
 .email a {
     text-decoration: none;
     color: black;
@@ -128,10 +145,10 @@ ul.work_images li {
         margin-top: 2.5em;
     }
     .work_wrapper {
-        margin: 8% 0 0 0;
+        margin: 15% 0 0 0;
     }
     .case_wrapper {
-        text-align: center;
+        text-align: left;
         width: 100%;
         margin: 3em 0 0 0;
     }
@@ -146,6 +163,17 @@ ul.work_images li {
         width: 100%;
         height: auto;
         padding: 0;
+    }
+    .case_image_wrapper {
+        margin: 2.5em 0 0 0;
+    }
+    .case_thumb_wide {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .case {
+        margin: 10%;
     }
     ul {
         padding: 0;
@@ -171,13 +199,13 @@ ul.work_images li {
         position: fixed;
     }
     .home_wrapper {
-        margin-top: 3.5em;
+        margin-top: 4.5em;
     }
     .work_wrapper {
         margin: 8% 8px 0 8px;
     }
     .case_wrapper {
-        text-align: center;
+        text-align: left;
         width: 100%;
         margin: 3em 0 0 0;
     }
@@ -192,6 +220,17 @@ ul.work_images li {
         width: 100%;
         height: auto;
         padding: 0;
+    }
+    .case_image_wrapper {
+        margin: 3.5em 0 0 0;
+    }
+    .case_thumb_wide {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+    .case {
+        margin: 10%;
     }
     ul {
         padding: 0;
