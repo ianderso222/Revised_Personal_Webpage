@@ -4,14 +4,25 @@
 
 <head>
     <title>Web Design</title>
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+
+    <!-- for IE -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400|Exo:400,600|Raleway' rel='stylesheet' type='text/css'>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
 
     <script>
         $(document).ready(function() {
-            var back = ["#22A7F0", "#00FFFF", "#FFFF00", "#00FF00", "#AEA8D3", "#D64541", "#2C3E50", "#1E8BC3", "#87D37C", "#4ECDC4", "#3FC380", "#E87E04", "#F9690E", "#F9BF3B"];
+            var back = ["#22A7F0", "#00FFFF", "#AEA8D3", "#D64541", "#2C3E50", "#1E8BC3", "#87D37C", "#4ECDC4", "#3FC380", "#E87E04", "#F9690E", "#F9BF3B"];
 
             $('.wrapper').each(function() {
 
@@ -49,46 +60,85 @@
 
     </script>
 
+    <script>
+        $(function() {
+            $('body').removeClass('fade-out');
+        });
+
+    </script>
+
 </head>
 
 <body>
-    <div class="nav_wrapper">
-        <div id="logo"><a href="home.html">IA</a></div>
+    <script>
+        document.body.className += ' fade-out';
 
-        <ul class="nav_list">
+    </script>
+    <div id="main">
+        <div class="nav_wrapper">
+            <div id="logo"><a href="home.html">IA</a></div>
 
-            <li><a href="home.html" class="active">WORK</a></li>
-            <li><a href="info.html">INFO</a></li>
-        </ul>
-    </div>
-    <div class="wrapper">
-        <!--<div class="home_wrapper">
-           <div id="home_text">
-                <span>Ian Anderson</span>
-               <p>Front-End Designer</p>
-               <p>Bowling Green, KY</p>
-           </div>
-        </div>-->
+            <ul class="nav_list">
 
-        <div class="work_wrapper">
-            <ul class="work_images">
-                <li><img src="images/taco2.png" alt="" class="thumb" /></li>
-                <li><img src="images/Ian2.png" alt="" class="thumb" /></li>
-                <li>
-                    <a href="case_study_1.html"><img src="images/cate3.png" alt="" class="thumb" /></a>
-                </li>
-                <li><img src="images/EWF2.png" alt="" class="thumb" /></li>
-
-                <li><img src="images/newspaper2.png" alt="" class="thumb" /></li>
+                <li class="active"><a href="home.html">WORK</a></li>
+                <li><a href="info.html">INFO</a></li>
             </ul>
         </div>
+        <div class="wrapper">
+            <div class="home_wrapper">
+                <div id="home_text">
+                    <span id="name">IAN ANDERSON</span>
+                    <p>Front-End Designer </p>
 
+                </div>
+            </div>
+
+            <div class="work_wrapper">
+                <!--<span id="kicker">Web Design</span>-->
+                <ul class="work_images">
+                    <li>
+                        <a href="case_study_taco.html"><img src="images/taco2.png" alt="" class="thumb" /></a>
+                    </li>
+                    <li>
+                        <a href="case_study_personal.html"><img src="images/Ian2.png" alt="" class="thumb" /></a>
+                    </li>
+                    <li>
+                        <a href="case_study_cate.html"><img src="images/cate3.png" alt="" class="thumb" /></a>
+                    </li>
+                    <li>
+                        <a href="case_study_ewf.html"><img src="images/EWF2.png" alt="" class="thumb" /></a>
+                    </li>
+
+                    <li>
+                        <a href="case_study_news.html"> <img src="images/newspaper2.png" alt="" class="thumb" /></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-
 </body>
 
 
 
-<footer></footer>
+<footer>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-69781668-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</footer>
 
 </html>

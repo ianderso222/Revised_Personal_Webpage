@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Web Design</title>
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+
+    <!-- for IE -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400|Exo:400,600|Raleway' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script>
+        $(document).ready(function() {
+            var back = ["#22A7F0", "#00FFFF", "#AEA8D3", "#D64541", "#2C3E50", "#1E8BC3", "#87D37C", "#4ECDC4", "#3FC380", "#E87E04", "#F9690E", "#F9BF3B"];
+
+            $('.wrapper').each(function() {
+
+                // First random color
+                var rand1 = back[Math.floor(Math.random() * back.length)];
+                // Second random color
+                var rand2 = back[Math.floor(Math.random() * back.length)];
+
+                var grad = $(this);
+
+                // Convert Hex color to RGB
+                function convertHex(hex, opacity) {
+                    hex = hex.replace('#', '');
+                    r = parseInt(hex.substring(0, 2), 16);
+                    g = parseInt(hex.substring(2, 4), 16);
+                    b = parseInt(hex.substring(4, 6), 16);
+
+                    // Add Opacity to RGB to obtain RGBA
+                    result = 'rgba(' + r + ',' + g + ',' + b + ',' + opacity / 100 + ')';
+                    return result;
+                }
+
+                // Gradient rules
+                grad.css('background-color', convertHex(rand1, 40));
+                grad.css("background-image", "-webkit-gradient(linear, left top, left bottom, color-stop(0%," + convertHex(rand1, 40) + "), color-stop(100%," + convertHex(rand2, 40) + "))");
+                grad.css("background-image", "-webkit-linear-gradient(top,  " + convertHex(rand1, 40) + " 0%," + convertHex(rand2, 40) + " 100%)");
+                grad.css("background-image", "-o-linear-gradient(top, " + convertHex(rand1, 40) + " 0%," + convertHex(rand2, 40) + " 100%)");
+                grad.css("background-image", "-ms-linear-gradient(top, " + convertHex(rand1, 40) + " 0%," + convertHex(rand2, 40) + " 100%)");
+                grad.css("background-image", "linear-gradient(to bottom, " + convertHex(rand1, 40) + " 0%," + convertHex(rand2, 40) + " 100%)");
+                grad.css("filter", "progid:DXImageTransform.Microsoft.gradient( startColorstr='" + convertHex(rand1, 40) + "', endColorstr='" + convertHex(rand2, 40) + "',GradientType=0 )");
+
+            });
+
+        });
+
+    </script>
+    <script>
+$(function() {
+    $('body').removeClass('fade-out');
+});
+
+    </script>
+</head>
+
+<body>
+    <script>
+document.body.className += ' fade-out';
+
+    </script>
+    <div class="nav_wrapper">
+        <div id="logo"><a href="home.html">IA</a></div>
+
+        <ul class="nav_list">
+
+            <li><a href="home.html" class="active">WORK</a></li>
+            <li><a href="info.html">INFO</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper">
+        <div class="case_image_wrapper">
+            <ul class="case_images">
+
+
+            </ul>
+        </div>
+
+        <div class="case_wrapper">
+            <div class="case">
+                <p>My personal webpage, the one you are perusing right now, has been a source of misery for me over my web design career. This is version 3.0 (the other versions can be viewed on my GitHub profile if you wish to see what kind of design road I took to get here). I say it has been a source of misery because I found it very hard to not only decide on a design but to ultimately be finished with it. There was always something that I felt could be done differently or something I should add or remove. Looking at it hours on end often made me grow tired of the design or made me feel as if it was just not good, almost like saying a word repeatedly until it sounds foreign. </p>
+
+                <p>My first version was very simple or minimalistic which is the type of design I am most often drawn too. I feel it serves web design the best, the design aspect almost being in the background allowing the content really shine through. While my first version, version 1.0, was minimal it did not deliver the way I had hoped. It was a dark and dingy website, the background a dark grey and the text was the only color to be found. The text color was quite frankly all over the place, I think there were 5 different colors of text total. The navigation menus were not consistent and there was little information about myself personally and as a designer or developer.
+                </p>
+
+                <p>Version 2.0 was short lived. I went in a different direction with it, one that ultimately did not fare well with the critics. I decided to lighten the colors, choosing a light grey and light blue theme, which was dubbed boring and plain. A left aligned fixed navigation menu that took up too much of the screen. Examples of my work with little information about the design process behind them.
+                </p>
+
+                <p>Version 3.0, the current form, is the culmination of a lot of constructive criticism and design practice. Between the earlier versions and this site I had the pleasure of reading and studying web design literature, such as "Don't Make Me Think, Revisited" by Steve Krug, and viewing hundreds if not thousands of other web design portfolios by designers much, much better than myself. Through it all I find the design and redesign experience to be rewarding even if it is arduous and slow moving at times. It allows a chance to revisit and contemplate why a certain design decision was made or direction taken, how I would go about it now with more "tools" in my tool belt, and additionally shows a measure of how far I've grown as a designer/developer. </p>
+
+                <p>This website is designed from scratch, as are the rest featured on my works page, using HTML, CSS, and a little javascript/jQuery. </p>
+
+                <p class="work_link"><a href="home.html">Return to view the rest of my projects.</a></p>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+
+
+    <footer> <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-69781668-1', 'auto');
+ga('send', 'pageview');
+
+        </script></footer>
+
+</html>
