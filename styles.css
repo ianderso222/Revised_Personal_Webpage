@@ -81,8 +81,8 @@ ul.home_text {
 }
 .work_wrapper {
     margin: 0;
-    padding: 0 0 0 4%;
-    width: 96%;
+    padding: 0 4% 0 4%;
+    width: 92%;
 }
 .nav_list {
     display: inline-block;
@@ -142,7 +142,7 @@ ul.work_images {
 ul.work_images li {
     list-style: none;
     display: inline-block;
-    width: 31%;
+    width: 33%;
 }
 img.thumb {
     width: 100%;
